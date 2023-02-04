@@ -4,9 +4,15 @@
 // 32679 -> 6
 
 Console.Clear();
-Console.Write("ВВЕДИТЕ трехзначное число: ");
+Console.Write("ВВЕДИТЕ трехзначное не отрицательное число: ");
 int n = Convert.ToInt32(Console.ReadLine());
-int n1 = (n % 100) ;
-int n2 = (n1 % 10);
-Console.Write("Вторая цифра числа это: ");
+
+if (n<99)
+    {Console.Write("третьей цыфры нет");}
+    else {
+        int n1 = n % 10;
+    }
+
+Console.Write("третья цифра числа это: ");
 Console.WriteLine(n1);
+    
